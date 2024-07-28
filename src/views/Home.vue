@@ -1,7 +1,12 @@
 <template>
-    <div id="">
-        
+    <div id="home">
+        <div>
+            <Logo />
+
+        </div>
     </div>
 </template>
-<script>
+<script setup>
+
+import Logo from '../components/logo.vue';
 </script>
