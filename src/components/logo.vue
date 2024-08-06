@@ -10,11 +10,11 @@
 <style scoped>
 
 #logo {
-    height: 64vh;
-    width: 40%;
+    height: 56vh;
+    width: 35%;
     background-color: black;
     border-bottom-right-radius: 85%;
-    border-right: 5px solid rgb(1, 53, 1);
+    border-right: 1.5px solid rgb(1, 53, 1);
 }
 
 </style>
