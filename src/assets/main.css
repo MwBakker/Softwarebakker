@@ -1,13 +1,13 @@
 @import './base.css';
 
 body {
-  /* background-image: url('background.png'); */
-  background-color: darkcyan;
+  /* background-color: darkcyan; */
+  background-color: black;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
-h1,
+
 p {
   color: antiquewhite;
 }
@@ -19,17 +19,23 @@ p {
 h1 {
   font-family: 'Courier New', Courier, monospace;
   font-size: calc(3em + 1vmin);
+  color: black;
 }
 
 h2 {
   font-family: 'Consolas', monospace;
   font-size: calc(1.8em + 1vmin);
-  color: rgba(217, 250, 215, 0.779);
+  /* color: rgba(217, 250, 215, 0.779); */
+  color: black;
 }
 
 p {
   color: rgba(255, 255, 255, 0.619);
 
+}
+
+a {
+  text-decoration: none;
 }
 
 #app {
@@ -62,13 +68,13 @@ p {
 
 .slide-fade-left-enter-from,
 .slide-fade-left-leave-to {
-  transform: translateX(80%);
+  transform: translateX(100%);
   opacity: 0;
 }
 
 .slide-fade-right-enter-from,
 .slide-fade-right-leave-to {
-  transform: translateX(-80%);
+  transform: translateX(-100%);
   opacity: 0;
 }
 

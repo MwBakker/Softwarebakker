@@ -1,6 +1,7 @@
 <template>
-    <div id="price">
-        <div id="oven">
+    <div id="oven">
+        <div id="top-layer"></div>
+        <div id="text">
             <Transition id="title" name="slide-fade-up" appear>
                 <h2>{{ title }}</h2>
             </Transition>
@@ -28,24 +29,21 @@ defineProps({
 </script>
 
 <style scoped>
-#price {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+#oven {
     text-align: center;
-    width: 27.5%;
-    border: 1px solid gray;
-    border-top: 120px solid transparent;
-    border-bottom: 120px solid transparent;
+    width: 25%;
+    height: 32svh;
+    border-radius: 16px;
+    opacity: 85%;
+    background-color: black;
     background-image: url('../assets/icon/oven.png');
     background-position: center;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
-#oven {
-    width: 68%;
-    margin: 32px auto 0 auto;
-    background-color: black;
+#top-layer {
+    height: 10svh;
 }
 
 #title {
@@ -53,6 +51,7 @@ defineProps({
 }
 
 h2 {
+    color: rgba(217, 250, 215, 0.779);
     margin: 0;
 }
 
@@ -100,6 +99,13 @@ p {
 
     to {
         --num: v-bind(amount);
+    }
+}
+
+@media (max-width: 1024px) {
+    #oven {
+        width: 55%;
+        margin: 4vh 0;
     }
 }
 </style>
